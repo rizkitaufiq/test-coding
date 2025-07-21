@@ -250,7 +250,7 @@
     <h1>CRUD SEDERHANA</h1>
 
     <section>
-        <a href="/users/create">Tambah User</a>
+        <a href="/users/create" style="margin-bottom: 1rem;">Tambah User</a>
         <table border="1">
             <tr>
                 <th>nama</th>
@@ -261,11 +261,11 @@
             </tr>
             <?php foreach ($user as $row) : ?>
                 <tr>
-                    <td><?= $user['nama'] ?></td>
-                    <td><?= $user['email'] ?></td>
-                    <td><?= $user['password'] ?></td>
-                    <td><?= $user['nomer hp'] ?></td>
-                    <td><a href="/user/delete/<?= $user['id'] ?>" onclick="return confirm('Hapus Data ini ?')">Hapus</a></td>
+                    <td><?= $row['nama'] ?></td>
+                    <td><?= $row['email'] ?></td>
+                    <td><?= $row['password'] ?></td>
+                    <td><?= $row['nomer_hp'] ?></td>
+                    <td><a href="/user/delete/<?= $row['id'] ?>" onclick="return confirm('Hapus Data ini ?')">Hapus</a></td>
                 </tr>
             <?php endforeach ?>
         </table>
@@ -276,7 +276,7 @@
 
     <!-- FOOTER: DEBUG INFO + COPYRIGHTS -->
 
-    <footer>
+    <!-- <footer>
         <div class="environment">
 
             <p>Page rendered in {elapsed_time} seconds using {memory_usage} MB of memory.</p>
@@ -292,7 +292,7 @@
 
         </div>
 
-    </footer>
+    </footer> -->
 
     <!-- SCRIPTS -->
 

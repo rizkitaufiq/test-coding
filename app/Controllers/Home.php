@@ -10,7 +10,7 @@ class Home extends BaseController
     {
         $users = new UserModel();
         $data['user'] = $users->findAll();
-        return view('welcome_message');
+        return view('welcome_message', $data);
     }
 
     public function create()
