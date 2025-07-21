@@ -31,4 +31,11 @@ class Home extends BaseController
         session()->setFlashdata('success', 'Data berhasil ditambahkan!');
         return redirect()->to(base_url('/'));
     }
+
+    public function delete($id)
+    {
+        $users = new UserModel();
+        $users->delete($id);
+        return redirect()->to(site_url('Home/index'));
+    }
 }
