@@ -9,18 +9,30 @@
 
 <body>
     <h2>Tambah User</h2>
-    <form action="/user/store" method="POST">
-        <label for="nama">Nama</label>
-        <input type="text" name="nama">
+    <form action="/user/store" method="POST" style="display: flex; flex-direction:column; gap:1rem;">
+        <div>
+            <label for="nama">Nama</label>
+            <input type="text" name="nama">
+        </div>
 
-        <label for="email">Email</label>
-        <input type="email" name="email">
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email">
+        </div>
 
-        <label for="password">Password</label>
-        <input type="password" name="password">
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password">
+        </div>
 
-        <label for="nomer_hp">Nomer HP</label>
-        <input type="number" name="nomer_hp">
+        <div>
+            <label for="nomer_hp">Nomer HP</label>
+            <input type="number" name="nomer_hp">
+        </div>
+
+        <div>
+            <button type="submit" style="background-color:blue; color:white;">simpan</button>
+        </div>
     </form>
 </body>
 

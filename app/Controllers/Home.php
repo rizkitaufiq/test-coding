@@ -28,6 +28,7 @@ class Home extends BaseController
             'nomer_hp' => $this->request->getPost('nomer_hp'),
 
         ]);
-        return redirect()->to('welcome_message');
+        session()->setFlashdata('success', 'Data berhasil ditambahkan!');
+        return redirect()->to(base_url('/'));
     }
 }

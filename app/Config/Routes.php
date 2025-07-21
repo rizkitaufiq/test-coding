@@ -6,5 +6,5 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/', 'Home::index');
-$routes->get('user/create', 'User::create');
-$routes->get('user/store', 'User::stroe');
+$routes->get('user/create', 'Home::create');
+$routes->post('user/store', 'Home::store');

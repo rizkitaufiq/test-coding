@@ -250,7 +250,7 @@
     <h1>CRUD SEDERHANA</h1>
 
     <section>
-        <a href="/users/create" style="margin-bottom: 1rem;">Tambah User</a>
+        <a href="/user/create" style="margin-bottom: 1rem;">Tambah User</a>
         <table border="1">
             <tr>
                 <th>nama</th>
